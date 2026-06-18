@@ -1,0 +1,23 @@
+
+.tabs {
+  display: flex;
+}
+.tabs button {
+  padding: 10px 10px;
+  border: none;
+  background: #b0b0b0;
+  color: #304080;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 600;
+  min-width: 100px;
+}
+.tabs button.active {
+  background-color: #e3e3e3;
+}
+.tab_content {
+  background-color: #e3e3e3;
+}
+.tab_content .invisible {
+  display: none;
+}

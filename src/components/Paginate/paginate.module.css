@@ -1,0 +1,18 @@
+.paginate {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
+.paginate .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 15%;
+  font-size: large;
+  background-color: #404040;
+  color: #fff;
+}
+.paginate .active {
+  background-color: #304080;
+}

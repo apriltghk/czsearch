@@ -1,0 +1,23 @@
+
+.items {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.items .items_item {
+  padding: 5px;
+  width: 100%;
+  background-color: #c2c2c2;
+}
+
+.items .item_title {
+  font-weight: 600;
+}
+
+.items .item_detail {
+  display: flex;
+  justify-content: space-between;
+}
