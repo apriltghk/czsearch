@@ -1,7 +1,7 @@
 
 import styles from './cat-page.module.css'
 
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
@@ -26,7 +26,9 @@ export default function CatPage({
     {
       key: 'list',
       label: '最新',
-      content: <ListContent values={values} />
+      content: <Suspense fallback={<div>Loading...</div>}>
+        <ListContent values={values} />
+      </Suspense>
     },
   ]
 
